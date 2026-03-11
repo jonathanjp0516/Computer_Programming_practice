@@ -4,5 +4,7 @@ project(Computer_Programming_practice)
 set(CMAKE_CXX_STANDARD 98)
 
 add_executable(Computer_Programming_practice
-        C112152327_week1_1.cpp
-        hw02.cpp)
+        C112152327_week2_1.cpp
+        C112152327_week3_1.cpp
+        C112152327_week2_2.cpp
+)
