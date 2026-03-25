@@ -6,7 +6,7 @@
 int main() {
     float a, b,c; //ax^2+bx+c
     while (true) {
-        scanf_s("%f %f %f",&a,&b,&c);
+        scanf("%f %f %f",&a,&b,&c);
         float check_eq = b * b - 4 * a * c; //b^2-4ac
         if (check_eq < 0) {
             printf("無解\n");

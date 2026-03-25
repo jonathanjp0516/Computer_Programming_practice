@@ -21,17 +21,14 @@ int main() {
         printf("%d 的 %d 次方為：%.0f\n", x, y, result);
     } 
     else if (y < 0) {
-        // 情況二：y 為負數
-        int temp_y = -y; // 先將負的指數轉為正數，方便跑迴圈
+        int temp_y = -y;
         for (int i = 0; i < temp_y; i++) {
             result *= x;
         }
-        result = 1.0 / result; // 算出正數次方後，取倒數
-        // 負數次方會有小數，預設印出 6 位小數
+        result = 1.0 / result;
         printf("%d 的 %d 次方為：%f\n", x, y, result);
     } 
     else {
-        // 情況三：y 為 0
         printf("%d 的 0 次方為：1\n", x);
     }
 
