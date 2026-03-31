@@ -1,0 +1,8 @@
+*.obj
+*.ilk
+*.pdb
+*.exe
+.vscode/
+.idea/
+cmake-build-debug/
+*.txt
