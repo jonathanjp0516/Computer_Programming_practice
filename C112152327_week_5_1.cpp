@@ -1,5 +1,6 @@
 //find prime
 #include <stdio.h>
+#include <stdbool.h>
 
 bool prime(const int num){
     if (num <= 1){
