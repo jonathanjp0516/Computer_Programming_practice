@@ -1,6 +1,7 @@
 //bmi calculator
 #include<stdio.h>
 #include<stdlib.h>
+#include <stdbool.h>
 
 float bmi_calc(const float h,const float w){
     float bmi = w/(h*h);
