@@ -16,17 +16,17 @@ int main(){
         bmi = bmi_calc(height/100,weight);
 
         if(bmi>=35){
-            printf("重度肥胖");
+            printf("重度肥胖\n");
         }else if(bmi>=30){
-            printf("中度肥胖");
+            printf("中度肥胖\n");
         }else if(bmi>=27){
-            printf("輕度肥胖");
+            printf("輕度肥胖\n");
         }else if(bmi>=24){
-            printf("過重");
+            printf("過重\n");
         }else if(bmi>=18.5){
-            printf("適中");
+            printf("適中\n");
         }else if(bmi<18.5){
-            printf("過輕");
+            printf("過輕\n");
         }
     }
 }
