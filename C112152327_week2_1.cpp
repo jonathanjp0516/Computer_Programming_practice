@@ -1,25 +1,36 @@
-//一元二次方程式
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <math.h>
 #include <stdbool.h>
+=======
+
+float bmi_calc(const float h, const float w) {
+    return w / (h * h);
+}
+>>>>>>> 6fe1da09995df18b13cfcbf9cb5265747af5bec9
 
 int main() {
-    float a, b,c; //ax^2+bx+c
-    while (true) {
-        scanf_s("%f %f %f",&a,&b,&c);
-        float check_eq = b * b - 4 * a * c; //b^2-4ac
-        if (check_eq < 0) {
-            printf("無解\n");
-            return 0;
-        }
-        if (check_eq == 0) {
-            const float ans = -b / (2 * a);
-            printf("重根 X=%.0f\n",ans);
-        }else {
-            const float ans1 = (-b + sqrt(check_eq)) / (2 * a);
-            const float ans2 = (-b - sqrt(check_eq)) / (2 * a);
-            printf("有兩根 X=%.0f or %.0f\n",ans1,ans2);
+    float height, weight, bmi;
+    /* C89 不支援 true，直接用 1 */
+    while (1) {
+        /* 如果 scanf 沒讀到東西就結束 */
+        if (scanf("%f %f", &height, &weight) != 2) break;
+
+        bmi = bmi_calc(height / 100.0f, weight);
+
+        if (bmi >= 35) {
+            printf("重度肥胖\n");
+        } else if (bmi >= 30) {
+            printf("中度肥胖\n");
+        } else if (bmi >= 27) {
+            printf("輕度肥胖\n");
+        } else if (bmi >= 24) {
+            printf("過重\n");
+        } else if (bmi >= 18.5) {
+            printf("適中\n");
+        } else {
+            printf("過輕\n");
         }
     }
     return 0;
