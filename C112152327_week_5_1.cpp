@@ -21,9 +21,6 @@ int main() {
             printf("%d,", i);
         }
     }
-<<<<<<< HEAD
-=======
     printf("\n");
->>>>>>> 6fe1da09995df18b13cfcbf9cb5265747af5bec9
     return 0;
 }

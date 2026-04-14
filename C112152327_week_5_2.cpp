@@ -47,10 +47,7 @@ int main() {
             ans += result;
         }
     }
-<<<<<<< HEAD
-    printf("%g",ans);
-=======
+
     printf("%g\n", ans);
->>>>>>> 6fe1da09995df18b13cfcbf9cb5265747af5bec9
     return 0;
 }
