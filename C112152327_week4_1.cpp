@@ -1,5 +1,6 @@
 //brute force GCD
 #include<stdio.h>
+#include <stdbool.h>
 
 int gcd_brute_force_func(const int a, const int b){
     if(a == 0 || b == 0) return (a > b) ? a : b;//zero exception

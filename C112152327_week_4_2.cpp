@@ -1,5 +1,6 @@
 //GCD
 #include<stdio.h>
+#include <stdbool.h>
 
 int gcd_func(const int a,const int b){
     int temp_a = a,temp_b = b;

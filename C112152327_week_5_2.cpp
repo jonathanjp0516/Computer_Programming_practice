@@ -44,4 +44,5 @@ int main() {
         ans += result;
     }
     printf("%g",ans);
+    return 0;
 }

@@ -1,5 +1,6 @@
 //九九乘法表
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     for (int i = 1; i <= 9; i++) {
@@ -11,4 +12,5 @@ int main() {
         }
         printf("\n");
     }
+    return 0;
 }

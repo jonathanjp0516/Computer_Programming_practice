@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <stdbool.h>
 
 int main() {
     float a, b,c; //ax^2+bx+c
@@ -21,4 +22,5 @@ int main() {
             printf("有兩根 X=%.0f or %.0f\n",ans1,ans2);
         }
     }
+    return 0;
 }
