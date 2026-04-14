@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-<<<<<<< HEAD
-#include <math.h>
-#include <stdbool.h>
-=======
 
 float bmi_calc(const float h, const float w) {
     return w / (h * h);
 }
->>>>>>> 6fe1da09995df18b13cfcbf9cb5265747af5bec9
 
 int main() {
     float height, weight, bmi;

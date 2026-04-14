@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-//brute force GCD
-#include<stdio.h>
-#include <stdbool.h>
-=======
 /*brute force GCD*/
 #include <stdio.h>
->>>>>>> 6fe1da09995df18b13cfcbf9cb5265747af5bec9
 
 int gcd_brute_force_func(const int a, const int b) {
     int min, i;
