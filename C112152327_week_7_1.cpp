@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 float fact(const int num){
-    if(num==1){
+    if(num == 0 || num == 1){
         return 1;
     }else{
         return num * fact(num - 1);
@@ -10,11 +10,13 @@ float fact(const int num){
 }
 
 int main(){
-    int num = 0,sum = 0;
+    int num = 0;
+    float sum = 0.0;
     while(1){
         scanf("%d",&num);
-        for(int i=0;i<=num;i++){
-
+        for(int i=0; i<=num; i++){
+            sum += fact(num) / (fact(i) * fact(num - i));
         }
+        printf("sum = %.2f\n", sum);
     }
 }
